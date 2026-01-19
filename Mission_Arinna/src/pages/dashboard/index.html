@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Mission Control - GURPREET</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <!-- Cyber Header -->
+  <header class="cyber-header" data-username="GURPREET" data-points="1250" data-streak="7" data-level="12">
+    <div class="header-gradient"></div>
+    <div class="header-content">
+      <div class="user-section">
+        <div class="avatar-container">
+          <div class="avatar-glow"></div>
+          <div class="avatar-border">
+            <div class="avatar">
+              <span class="avatar-text">G</span>
+            </div>
+          </div>
+          <div class="level-badge">
+            <span class="level-text">12</span>
+          </div>
+        </div>
+        <div class="user-info">
+          <h1 class="username">GURPREET</h1>
+          <p class="user-title">MISSION COMMANDER</p>
+        </div>
+      </div>
+
+      <div class="stats-section">
+        <div class="stat-orb floating">
+          <div class="stat-icon flame">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M12 2l-3.09 6.26L5.47 12 12 17.74l6.53-5.74-3.64-5.74L12 2z"/>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <p class="stat-label">Streak</p>
+            <p class="stat-value streak">7</p>
+          </div>
+        </div>
+
+        <div class="stat-orb floating-delayed">
+          <div class="stat-icon zap">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M13 3h-2v10h5l-5 7v-4h-2V3z"/>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <p class="stat-label">Points</p>
+            <p class="stat-value points">1,250</p>
+          </div>
+        </div>
+
+        <div class="stat-orb floating">
+          <div class="stat-icon trophy">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M12 2l3.09 6.26L19 12l-7 5.74 3.09-6.26L12 2z"/>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <p class="stat-label">Rank</p>
+            <p class="stat-value rank">#42</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <!-- Mission Sidebar -->
+    <aside class="mission-sidebar">
+      <div class="sidebar-header">
+        <div class="header-title">
+          <svg class="crosshair-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="3"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+          </svg>
+          <h2 class="title-text">TODAY'S MISSIONS</h2>
+        </div>
+        
+        <div class="progress-container">
+          <div class="progress-header">
+            <span class="progress-label">Progress</span>
+            <span class="progress-count">0/6</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filters-container">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="low">LOW</button>
+        <button class="filter-btn" data-filter="high">HIGH</button>
+        <button class="filter-btn" data-filter="super">SUPER</button>
+      </div>
+
+      <div class="missions-list">
+        <div class="mission-item" data-mission="1">
+          <div class="mission-header">
+            <h3 class="mission-title">Master Promise.allSettled() in JavaScript</h3>
+            <span class="priority-pill priority-high">
+              <svg class="priority-icon" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L19 12l-7 5.74 3.09-6.26L12 2z"/>
+              </svg>
+              HIGH
+            </span>
+          </div>
+          <div class="mission-footer">
+            <svg class="xp-icon" viewBox="0 0 24 24">
+              <path d="M13 3h-2v10h5l-5 7v-4h-2V3z"/>
+            </svg>
+            <span class="xp-text">+150 XP</span>
+          </div>
+        </div>
+
+        <div class="mission-item" data-mission="2">
+          <div class="mission-header">
+            <h3 class="mission-title">Build a React Custom Hook from Scratch</h3>
+            <span class="priority-pill priority-super">
+              <svg class="priority-icon" viewBox="0 0 24 24">
+                <path d="M12 17l-4-4 1.4-1.4 2.6 2.6 4.6-4.6L21 11l-9 9z"/>
+              </svg>
+              SUPER
+            </span>
+          </div>
+          <div class="mission-footer">
+            <svg class="xp-icon" viewBox="0 0 24 24">
+              <path d="M13 3h-2v10h5l-5 7v-4h-2V3z"/>
+            </svg>
+            <span class="xp-text">+300 XP</span>
+          </div>
+        </div>
+
+        <div class="mission-item" data-mission="3">
+          <div class="mission-header">
+            <h3 class="mission-title">Complete CSS Flexbox Challenge</h3>
+            <span class="priority-pill priority-low">
+              <svg class="priority-icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+              </svg>
+              LOW
+            </span>
+          </div>
+          <div class="mission-footer">
+            <svg class="xp-icon" viewBox="0 0 24 24">
+              <path d="M13 3h-2v10h5l-5 7v-4h-2V3z"/>
+            </svg>
+            <span class="xp-text">+75 XP</span>
+          </div>
+        </div>
+
+        <div class="mission-item" data-mission="4">
+          <div class="mission-header">
+            <h3 class="mission-title">Create REST API with Node.js</h3>
+            <span class="priority-pill priority-high">
+              <svg class="priority-icon" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L19 12l-7 5.74 3.09-6.26L12 2z"/>
+              </svg>
+              HIGH
+            </span>
+          </div>
+          <div class="mission-footer">
+            <svg class="xp-icon" viewBox="0 0 24 24">
+              <path d="M13 3h-2v10h5l-5 7v-4h-2V3z"/>
+            </svg>
+            <span class="xp-text">+200 XP</span>
+          </div>
+        </div>
+
+        <div class="mission-item" data-mission="5">
+          <div class="mission-header">
+            <h3 class="mission-title">Write Unit Tests for Authentication</h3>
+            <span class="priority-pill priority-low">
+              <svg class="priority-icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+              </svg>
+              LOW
+            </span>
+          </div>
+          <div class="mission-footer">
+            <svg class="xp-icon" viewBox="0 0 24 24">
+              <path d="M13 3h-2v10h5l-5 7v-4h-2V3z"/>
+            </svg>
+            <span class="xp-text">+100 XP</span>
+          </div>
+        </div>
+
+        <div class="mission-item" data-mission="6">
+          <div class="mission-header">
+            <h3 class="mission-title">Implement WebSocket Real-time Chat</h3>
+            <span class="priority-pill priority-super">
+              <svg class="priority-icon" viewBox="0 0 24 24">
+                <path d="M12 17l-4-4 1.4-1.4 2.6 2.6 4.6-4.6L21 11l-9 9z"/>
+              </svg>
+              SUPER
+            </span>
+          </div>
+          <div class="mission-footer">
+            <svg class="xp-icon" viewBox="0 0 24 24">
+              <path d="M13 3h-2v10h5l-5 7v-4h-2V3z"/>
+            </svg>
+            <span class="xp-text">+350 XP</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Mission Arena -->
+    <main class="mission-arena">
+      <div class="arena-card">
+        <div class="arena-header">
+          <div class="mission-info">
+            <div class="mission-badge">
+              <svg class="target-icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <div class="mission-details">
+              <p class="mission-label">Current Mission</p>
+              <h2 class="mission-title">SELECT MISSION</h2>
+            </div>
+          </div>
+          
+          <div class="arena-stats">
+            <div class="stat-item">
+              <svg class="clock-icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12,6 12,12 16,14"/>
+              </svg>
+              <span class="stat-label">Time:</span>
+              <span class="stat-value time">05:00</span>
+            </div>
+            <div class="stat-item">
+              <svg class="priority-icon-small zap-icon" viewBox="0 0 24 24">
+                <path d="M13 3h-2v10h5l-5 7v-4h-2V3z"/>
+              </svg>
+              <span class="stat-label">Priority:</span>
+              <span class="stat-value priority">—</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Reward:</span>
+              <span class="stat-value reward">+0 XP</span>
+            </div>
+          </div>
+
+          <button class="start-btn disabled">
+            <svg class="play-icon" viewBox="0 0 24 24">
+              <polygon points="5,3 19,12 5,21 5,3"/>
+            </svg>
+            START MISSION
+          </button>
+        </div>
+
+        <div class="attempts-section">
+          <p class="attempts-label">Attempts Remaining</p>
+          <div class="attempts-container">
+            <div class="attempt-orb available">1</div>
+            <div class="attempt-orb available">2</div>
+            <div class="attempt-orb available">3</div>
+            <div class="attempts-line"></div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button class="action-btn pass-btn disabled">
+            <svg class="check-icon" viewBox="0 0 24 24">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            MISSION PASSED
+          </button>
+          <button class="action-btn fail-btn disabled">
+            <svg class="x-icon" viewBox="0 0 24 24">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            MISSION FAILED
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="dashboard.js" type="module"></script>
+</body>
+</html>
+
+
