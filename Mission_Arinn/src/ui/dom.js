@@ -1,5 +1,8 @@
 // Header
 const cyberHeader = document.querySelector('.cyber-header')
+console.log(cyberHeader);
+
+const missionList = document.querySelector(".missions-list")
 
 // User section
 const usernameText = document.querySelector('.username')
@@ -66,5 +69,6 @@ export {
   startMissionBtn,
   attemptOrbs,
   passBtn,
-  failBtn
+  failBtn,
+  missionList
 }

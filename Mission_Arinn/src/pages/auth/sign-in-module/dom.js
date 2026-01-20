@@ -1,6 +1,7 @@
 // dom.js
 
 export const toggleBtns = document.querySelectorAll('.toggle-btn');
+export const optionClass = document.querySelector(".option-class")
 
 export const formFields = {
   name: document.querySelector('.name-field'),

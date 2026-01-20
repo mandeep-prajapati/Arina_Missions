@@ -6,7 +6,8 @@ import {
   form,
   submitBtn,
   inputs,
-  animatedElements
+  animatedElements,
+  optionClass
 } from './sign-in-module/dom.js';
 
 import { appState } from '../../core/appState.js';
@@ -178,11 +179,12 @@ function validateForm(data, isLogin){
 // }
 
 function signupUser(data){
+  let classIs = optionClass.value
   const exists = appState.users.some(user => user.email === data.email)
   if(exists) return "Email Already Registered"
 
   const newUser = {
-    id : crypto.randomUUID(),
+    id : `${crypto.randomUUID()}-${data.name}`,
     name: data.name,
     email: data.email,
     password: data.password,
@@ -190,6 +192,7 @@ function signupUser(data){
     rank: 0,
     streak: 0,
     level: 0,
+    classId: classIs
     // missions: missionsBySystem
   }
 
